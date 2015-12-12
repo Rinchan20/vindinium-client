@@ -43,8 +43,6 @@ public class RandomBot implements SimpleBot {
 	public static Map<Node, Position> tavernLocations;
 	
 	
-	
-	
     @Override
     public BotMove move(GameState gameState) {
     	logger.info("Moving...");
