@@ -3,6 +3,8 @@ package com.brianstempin.vindiniumclient.bot.simple;
 import com.brianstempin.vindiniumclient.bot.BotMove;
 import com.brianstempin.vindiniumclient.bot.BotUtils;
 import com.brianstempin.vindiniumclient.dto.GameState;
+import com.brianstempin.vindiniumclient.dto.GameState.Game;
+import com.brianstempin.vindiniumclient.dto.GameState.Hero;
 
 import java.util.*;
 import java.util.logging.Logger;
@@ -157,7 +159,7 @@ public class MurderBot implements SimpleBot {
     }
 
     @Override
-    public void setup() {
+    public void setup(Game game, Hero hero) {
         // No-op
     }
 

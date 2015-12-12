@@ -9,8 +9,8 @@ import com.google.api.client.http.apache.ApacheHttpTransport;
 import com.google.api.client.json.JsonFactory;
 import com.google.api.client.json.JsonObjectParser;
 import com.google.api.client.json.gson.GsonFactory;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 import java.util.concurrent.Callable;
 
@@ -51,6 +51,7 @@ public class SimpleBotRunner implements Callable<GameState> {
             request.setReadTimeout(0); // Wait forever to be assigned to a game
             response = request.execute();
             gameState = response.parseAs(GameState.class);
+            bot.setup(gameState.getGame(), gameState.getHero());
             logger.info("Game URL: {}", gameState.getViewUrl());
 
             // Game loop

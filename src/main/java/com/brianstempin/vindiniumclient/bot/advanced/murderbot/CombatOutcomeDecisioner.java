@@ -3,8 +3,8 @@ package com.brianstempin.vindiniumclient.bot.advanced.murderbot;
 import com.brianstempin.vindiniumclient.bot.BotMove;
 import com.brianstempin.vindiniumclient.bot.advanced.Vertex;
 import com.brianstempin.vindiniumclient.dto.GameState;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 /**
  * Decides if a battle is winnable and what to do about it.

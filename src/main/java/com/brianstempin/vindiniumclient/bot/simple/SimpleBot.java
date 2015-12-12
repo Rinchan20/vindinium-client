@@ -2,6 +2,8 @@ package com.brianstempin.vindiniumclient.bot.simple;
 
 import com.brianstempin.vindiniumclient.bot.BotMove;
 import com.brianstempin.vindiniumclient.dto.GameState;
+import com.brianstempin.vindiniumclient.dto.GameState.Game;
+import com.brianstempin.vindiniumclient.dto.GameState.Hero;
 import com.brianstempin.vindiniumclient.dto.Move;
 
 /**
@@ -25,8 +27,10 @@ public interface SimpleBot {
 
     /**
      * Called before the game is started
+     * @param hero 
+     * @param game 
      */
-    public void setup();
+    public void setup(Game game, Hero hero);
 
     /**
      * Called after the game

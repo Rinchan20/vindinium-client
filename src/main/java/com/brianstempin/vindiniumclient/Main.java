@@ -1,5 +1,8 @@
 package com.brianstempin.vindiniumclient;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+
 import com.brianstempin.vindiniumclient.bot.advanced.AdvancedBot;
 import com.brianstempin.vindiniumclient.bot.advanced.AdvancedBotRunner;
 import com.brianstempin.vindiniumclient.bot.simple.SimpleBot;
@@ -15,8 +18,6 @@ import com.google.api.client.json.JsonObjectParser;
 import com.google.api.client.json.gson.GsonFactory;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 /**
  * CLI program for launching a bot

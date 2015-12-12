@@ -3,6 +3,7 @@ package com.brianstempin.vindiniumclient.dto;
 import com.google.api.client.util.Key;
 
 import javax.annotation.concurrent.Immutable;
+
 import java.util.List;
 
 /**
@@ -25,7 +26,7 @@ public class GameState {
     private String token;
 
     @Key
-    private String viewUrl;
+    private Throwable viewUrl;
 
     @Key
     private String playUrl;
@@ -37,7 +38,7 @@ public class GameState {
 
     }
 
-    public GameState(Game game, Hero hero, String token, String viewUrl, String playUrl) {
+    public GameState(Game game, Hero hero, String token, Throwable viewUrl, String playUrl) {
         this.game = game;
         this.hero = hero;
         this.token = token;
@@ -57,7 +58,7 @@ public class GameState {
         return token;
     }
 
-    public String getViewUrl() {
+    public Throwable getViewUrl() {
         return viewUrl;
     }
 
